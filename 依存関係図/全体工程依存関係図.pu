@@ -1,0 +1,23 @@
+@startuml 全体構図
+start
+fork
+: WBS
+   担当者:稲川智也
+   時間配分:30min;
+: 流れ図
+   担当者:工藤正輝
+   時間配分:60min;
+: 依存関係図
+   担当者:橘内侑大
+   時間配分:90min;
+end fork
+fork
+  : 販売処理;
+  : 販売処理テスト;
+fork again
+  : 管理者画面;
+  : 管理者画面テスト;
+end fork
+fork
+  : 結合;
+end fork 
