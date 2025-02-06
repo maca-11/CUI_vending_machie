@@ -1,0 +1,8 @@
+@startwbs 商品一覧WBS
+title 商品一覧WBS
+
++ 商品一覧
+**[#SkyBlue] 商品番号、商品名、値段の順番で表示
+
+
+@endwbs
