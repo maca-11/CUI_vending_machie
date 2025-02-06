@@ -1,0 +1,14 @@
+@startwbs 全体工程WBS
+title 全体工程WBS
+
++ 全体工程
+**[#Red]  役割分担
+***[#Yellow] 1,WBS
+***[#Yellow] 2,依存関係図
+***[#Yellow] 3,タイトル表示
+***[#Yellow] 4,販売処理
+***[#Yellow] 5,流れ図
+***[#Yellow] 6,タイトル表示テスト
+***[#Yellow] 7,販売処理テスト
+***[#Yellow] 8,結合
+@endwbs
