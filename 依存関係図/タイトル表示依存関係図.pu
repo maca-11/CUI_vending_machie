@@ -1,0 +1,15 @@
+@startuml タイトル表示
+start
+fork
+  : 1.Enterを押す。;
+  : 2.画面がクリアされ処理が続く。;
+fork again
+  : 3.escを押す。;
+  : 4.管理者画面へ処理が続く;
+  : 5.管理者画面へ処理が続く;
+fork again
+  : 6.qキーを押す;
+  :7.シミュレータ終了;
+end fork
+
+end
