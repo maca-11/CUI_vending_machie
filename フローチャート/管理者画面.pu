@@ -1,0 +1,11 @@
+@startuml 管理者画面
+start
+repeat :番号入力;
+    :1なら売上リセット,2なら商品価格を変更する(売上リセットしないと不可);
+    backward :もう一度番号を入力;
+repeat while (管理者画面を終了する)
+
+end
+
+
+@enduml
