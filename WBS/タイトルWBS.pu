@@ -1,0 +1,12 @@
+@startwbs タイトルWBS
+title タイトルWBS
+
++ タイトル画面
+**[#Red] Enterを押す
+***[#SkyBlue] 画面がクリアされ処理が続く
+**[#Red] escを押す
+***[#SkyBlue] 管理者画面へ処理が続く
+**[#Red] qキーを押す
+***[#SkyBlue] シミュレータ終了
+
+@endwbs
