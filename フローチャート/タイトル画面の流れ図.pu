@@ -1,0 +1,18 @@
+@startuml タイトル
+    start
+    if (Please Enter) then (enter)
+    :画面がクリアされて処理が進む;
+    stop
+    else if(escキーを押したら)
+    :管理画面に処理が進む;
+    stop
+    else if (qキーを押したら)
+    :シミュレータ終了;
+    end
+    else (それ以外のキー)
+    :何も起こらない;
+    stop
+endif
+
+
+@enduml 
