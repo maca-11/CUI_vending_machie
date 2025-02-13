@@ -1,0 +1,11 @@
+@startuml タイトル
+start
+repeat :番号受付;
+:番号１の入力を受ける;
+:販売数のリセット;
+:商品ごとの売り上げリセット;
+:売上総額をリセット;
+repeat while (番号入力)
+stop
+
+@enduml

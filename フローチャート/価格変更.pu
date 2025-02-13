@@ -1,0 +1,24 @@
+@startuml タイトル
+start
+:番号受付;
+:番号2の入力を受ける;
+
+if (売上リセット?) then (yes)
+    :売り上げのリセット処理;
+    end
+else (no)
+    while (変更を続けますか？) is (yes)
+        :変更したい商品番号を受け取る;
+        :変更後の価格を入力;
+        :確認のため 番号と変更後の価格 を表示;
+
+        if (決定?) then (yes)
+            :変更しました;
+        else (no)
+            :再入力;
+        endif
+    endwhile 
+endif
+
+end
+@enduml
