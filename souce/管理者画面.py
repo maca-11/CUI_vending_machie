@@ -27,3 +27,28 @@ def show_admin_panel(products):
     print("2. 商品の価格を変更する")
     print("3. 管理画面を終了する")
 
+    choice = input("\n管理コード入力: ")
+    if choice == '1':
+        for item in products.values():
+            item["sales"] = 0
+        print("売上をリセットしました。")
+    elif choice == '2':
+        try:
+            print("\n商品番号と新しい価格を入力してください。")
+            product_number = int(input("商品番号: "))
+            new_price = int(input("新しい価格: "))
+            if product_number in products:
+                products[product_number]["price"] = new_price
+                print(f"{products[product_number]['name']}の価格が{new_price}円に変更されました。")
+            else:
+                print("無効な商品番号です。")
+        except ValueError:
+            print("無効な入力です。")
+    
+    print("\n管理画面に戻ります...")
+    print("Enterキーを押してください...")
+    while True:
+        key = keyboard.read_event(suppress=True).name
+        if key == 'enter':
+            clear_screen()
+            break
