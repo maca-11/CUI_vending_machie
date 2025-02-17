@@ -1,8 +1,8 @@
 import unittest
 from unittest.mock import patch, call
-import CUI
-# 'CUI' 関数をインポートしてください
-# from your_module import CUI
+
+# 'show_admin_panel' 関数をインポートします
+from souce.管理者画面 import show_admin_panel
 
 class TestShowAdminPanel(unittest.TestCase):
 
@@ -24,7 +24,7 @@ class TestShowAdminPanel(unittest.TestCase):
             type('Event', (object,), {'name': 'a'})
         ]
 
-        CUI(products)
+        show_admin_panel(products)
 
         # 売上がリセットされていることを確認
         for item in products.values():
@@ -51,7 +51,7 @@ class TestShowAdminPanel(unittest.TestCase):
             type('Event', (object,), {'name': 'a'})
         ]
 
-        CUI(products)
+        show_admin_panel(products)
 
         # 価格が変更されていることを確認
         self.assertEqual(products[1]['price'], 1000)
@@ -75,7 +75,7 @@ class TestShowAdminPanel(unittest.TestCase):
             type('Event', (object,), {'name': 'a'})
         ]
 
-        CUI(products)
+        show_admin_panel(products)
 
         # 価格が変更されていないことを確認
         self.assertNotEqual(products[1]['price'], 1000)
